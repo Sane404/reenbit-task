@@ -3,6 +3,7 @@ import { Outlet } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { googleLogout } from "@react-oauth/google";
 import { useNavigate } from "react-router-dom";
+import "./Root.css";
 const Root = () => {
   const [user, setUser] = useState(null);
   const navigate = useNavigate();
@@ -21,14 +22,22 @@ const Root = () => {
   return (
     <>
       <header>
-        <h2>Logo</h2>
+        <p className="app-header-title">Rick&#38;Morty API</p>
         {user && (
-          <>
-            <div>
-              {`${user.given_name} ${user.family_name}`}
-              <button onClick={logout}>Logout</button>
-            </div>
-          </>
+          <div className="user-info">
+            <img
+              src={user.picture}
+              alt="User"
+              className="header-image user_picture"
+            />
+            <p>{`${user.given_name} ${user.family_name}`}</p>
+            <img
+              src="/logout.svg"
+              alt="logout button"
+              className="header-image logout"
+              onClick={logout}
+            />
+          </div>
         )}
       </header>
       <main>

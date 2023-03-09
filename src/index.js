@@ -9,7 +9,7 @@ import "./index.css";
 import LoginPage from "./pages/LoginPage";
 import HomePage from "./pages/HomePage";
 import Root from "./components/Root";
-import Character from "./pages/Character";
+import CharacterPage from "./pages/CharacterPage";
 
 const router = createBrowserRouter([
   {
@@ -24,11 +24,11 @@ const router = createBrowserRouter([
         path: "homepage",
         element: <HomePage />,
       },
+      {
+        path: "character/:id",
+        element: <CharacterPage />,
+      },
     ],
-  },
-  {
-    path: "character/:id",
-    element: <Character />,
   },
 ]);
 

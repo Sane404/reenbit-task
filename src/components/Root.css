@@ -1,0 +1,31 @@
+header{
+    background-color: #14aac8;
+    color:#123d45;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.user-info{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.app-header-title{
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-weight:200;
+    padding-left: 10px;
+    /* color:#d3db4c; */
+    text-transform: uppercase;
+}
+.header-image{
+    width: 30px;
+    height: 30px;
+    display: block;
+}
+.user_picture{
+    border-radius: 50%;
+}
+.logout{
+    cursor:pointer
+}

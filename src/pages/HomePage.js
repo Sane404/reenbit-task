@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { useNavigate, Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import Character from "../components/Character";
 const HomePage = () => {
   const navigate = useNavigate();
   const [characters, setCharacters] = useState([]);
@@ -7,7 +8,7 @@ const HomePage = () => {
     JSON.parse(localStorage.getItem("search_query")) || ""
   );
   useEffect(() => {
-    //if user doesn't exist redirect right away
+    //if user didn't login redirect
     if (!localStorage.getItem("user")) {
       navigate("/");
     } else {
@@ -46,16 +47,7 @@ const HomePage = () => {
             return item.name.toLowerCase().includes(query.toLowerCase());
           })
           .map((ch) => {
-            return (
-              <Link to={`/character/${ch.id}`}>
-                Your Name
-                <div className="char">
-                  <img src={ch.image} alt={ch.name} />
-                  <b className="name">{ch.name}</b>
-                  <p className="species">{ch.species}</p>
-                </div>
-              </Link>
-            );
+            return <Character props={ch} key={ch.id} />;
           })}
       </div>
     </div>

@@ -1,0 +1,7 @@
+.login_page{
+    width: 100%;
+    height: calc(100vh - 53px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
