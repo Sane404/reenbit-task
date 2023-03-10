@@ -1,5 +1,5 @@
 import React from "react";
-
+import "./CharacterInfo.css";
 const CharacterInfo = ({ props }) => {
   const { name, image, info } = props;
   console.log(name, image, info);

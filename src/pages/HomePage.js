@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Character from "../components/Character";
+
+import "./HomePage.css";
 const HomePage = () => {
   const navigate = useNavigate();
   const [characters, setCharacters] = useState([]);
-  const [query, setQuery] = useState(
-    JSON.parse(localStorage.getItem("search_query")) || ""
-  );
+  const [query, setQuery] = useState(JSON.parse(localStorage.getItem("search_query")) || "");
   useEffect(() => {
     //if user didn't login redirect
     if (!localStorage.getItem("user")) {
@@ -30,17 +30,8 @@ const HomePage = () => {
 
   return (
     <div className="homepage">
-      <img
-        className="logo"
-        alt="Rick and Morty banner"
-        src="/homepage_banner.svg"
-      />
-      <input
-        type="search"
-        className="filter"
-        value={query}
-        onChange={(e) => setQuery(e.target.value)}
-      />
+      <img className="logo" alt="banner" src="/homepage_banner.svg" />
+      <input type="search" className="filter" placeholder="Filter by name..." value={query} onChange={(e) => setQuery(e.target.value)} />
       <div className="characters">
         {characters
           .filter((item) => {

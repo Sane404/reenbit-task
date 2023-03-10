@@ -1,0 +1,25 @@
+.homepage{
+    display: flex;
+    flex-direction: column;
+}
+.logo{
+    min-width: 312px;
+    min-height: 164px;
+    max-width: 600px;
+    max-height: 200px;
+    align-self: center;
+}
+.filter{
+    width: 100%;
+    border:1px solid rgb(116, 116, 116);
+    border-radius: 5px;
+    padding: 10px;
+    padding-left: 40px;
+    background: url("http://localhost:3000/magnifying_glass.svg") no-repeat 10px 10px;
+    margin-bottom: 40px;
+}
+.characters{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}

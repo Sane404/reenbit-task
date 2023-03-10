@@ -16,10 +16,7 @@ const LoginPage = () => {
   const responseGoogle = (response) => {
     let userObject = jwt_decode(response.credential);
     const { given_name, family_name, picture } = userObject;
-    localStorage.setItem(
-      "user",
-      JSON.stringify({ given_name, family_name, picture })
-    );
+    localStorage.setItem("user", JSON.stringify({ given_name, family_name, picture }));
     navigate("/homepage");
   };
   return (
