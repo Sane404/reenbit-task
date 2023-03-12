@@ -8,8 +8,10 @@ const Character = ({ props }) => {
     <Link to={`/character/${id}`} className="character">
       <div className="char">
         <img src={image} alt={name} />
-        <b className="name">{name}</b>
-        <p className="species">{species}</p>
+        <div className="char__text-wrap">
+          <b className="name">{name}</b>
+          <p className="species">{species}</p>
+        </div>
       </div>
     </Link>
   );

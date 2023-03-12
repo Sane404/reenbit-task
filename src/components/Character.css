@@ -12,13 +12,17 @@
     height: 168px;
     object-fit: cover;
 }
+.char__text-wrap{
+    padding: 10px 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 .name{
     display: block;
-    margin-left: 16px;
-    margin-top: 10px;
 }
 .species{
     margin: 0;
-    margin-left: 16px;
     color:gray;
+    font-size: 14px;
 }

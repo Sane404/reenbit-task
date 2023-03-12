@@ -3,6 +3,7 @@ import { Link, useParams } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import CharacterInfo from "../components/CharacterInfo";
 import useFetchCustom from "../functions/useFetchCustom";
+import "./CharacterPage.css";
 const CharacterPage = () => {
   const params = useParams();
   const navigate = useNavigate();
@@ -14,10 +15,13 @@ const CharacterPage = () => {
     }
   }, []);
   return (
-    <div className="character-info">
-      <Link to={`/homepage`}>GO Back</Link>
+    <>
+      <Link to={`/homepage`} className="back-btn">
+        <img src="/back-arrow.svg" alt="go back" className="btn-svg" />
+        <b className="link-text">GO Back</b>
+      </Link>
       <CharacterInfo props={character} />
-    </div>
+    </>
   );
 };
 

@@ -25,12 +25,12 @@ const useFetchCustom = (url) => {
               description: species,
             },
             {
-              title: "Type",
-              description: type,
-            },
-            {
               title: "Origin",
               description: origin,
+            },
+            {
+              title: "Type",
+              description: type,
             },
           ],
         };
