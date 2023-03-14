@@ -7,7 +7,7 @@ const CharacterInfo = ({ props }) => {
     <div className="character-info">
       <img className="character-info__image" src={image} alt={name} />
       <h2 className="character-info__name">{name}</h2>
-      <h3 className="details-title">Informations</h3>
+      <p className="details-title">Informations</p>
       <div className="details-wrap">
         {info?.map((item, i) => {
           return (

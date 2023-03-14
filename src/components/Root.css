@@ -29,6 +29,8 @@ header{
 .logout{
     cursor:pointer
 }
-main{
-    
-}
+@media screen and (max-width: 620px) {
+    .user-info p{
+        display: none;
+    }
+  }
