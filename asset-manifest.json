@@ -1,16 +1,19 @@
 {
   "files": {
     "main.css": "/reenbit-task/static/css/main.3afb99c7.css",
-    "main.js": "/reenbit-task/static/js/main.d90c2a3c.js",
+    "main.js": "/reenbit-task/static/js/main.a40c74fe.js",
     "static/js/787.1006437c.chunk.js": "/reenbit-task/static/js/787.1006437c.chunk.js",
+    "static/media/homepage_banner.svg": "/reenbit-task/static/media/homepage_banner.cc4a7d1826c4c03d11cfbf42cc844bae.svg",
+    "static/media/logout.svg": "/reenbit-task/static/media/logout.5e4a655751cac502a8c5f1c15fb8f2c5.svg",
     "index.html": "/reenbit-task/index.html",
     "static/media/magnifying_glass.svg": "/reenbit-task/static/media/magnifying_glass.77cfd6eef4ae63307cd8f1813909ed96.svg",
+    "static/media/back-arrow.svg": "/reenbit-task/static/media/back-arrow.58acb58c0d6bedac27e8921bfdcfc28a.svg",
     "main.3afb99c7.css.map": "/reenbit-task/static/css/main.3afb99c7.css.map",
-    "main.d90c2a3c.js.map": "/reenbit-task/static/js/main.d90c2a3c.js.map",
+    "main.a40c74fe.js.map": "/reenbit-task/static/js/main.a40c74fe.js.map",
     "787.1006437c.chunk.js.map": "/reenbit-task/static/js/787.1006437c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3afb99c7.css",
-    "static/js/main.d90c2a3c.js"
+    "static/js/main.a40c74fe.js"
   ]
 }
